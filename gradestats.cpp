@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+
 int main(){
   const int MAX_GRADES = 100;
   int grades[MAX_GRADES];
@@ -17,10 +18,14 @@ int main(){
     }
     if (grade >=0 && grade <=MAX_GRADES){
       grades[numGrades] = grade;
+      total += grade;
       numGrades++;
+      
     }else{
       cout << "invalid" <<endl;
     }
+       
   }
-
+  double average = total/numGrades;
+  cout<< "Average grade: "<<average<<endl;
 }
