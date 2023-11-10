@@ -6,8 +6,8 @@ int main(){
   const int arrayLen = 10;
   int randNums[arrayLen];
 
-  for (int i = 0; i < arrayLen; ++i){
-    randNums[i] = rand() % 100;
+   for (int i = 0; i < arrayLen; ++i){
+     randNums[i] = 1 +( rand() & 100);
   }
 
   cout<< "Random numbers: ";
